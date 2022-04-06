@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+#main-wrapper {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "h h h h h h h h"
+        "a a a a m m m m"
+        "f f f f f f f f";
+    grid-gap: 10px;
+}
+
+#header {
+    background-color: rgb(150, 150, 138);
+    height: 100px;
+    grid-area: h;
+}
+
+#main {
+    background-color: rgb(196, 161, 119);
+    height: 500px;
+    grid-area: m;
+    padding-left: 5px;
+}
+
+#aside {
+    background-color: rgb(128, 113, 94);
+    height: 500px;
+    grid-area: a;
+    padding-left: 5px;
+}
+
+#footer {
+    background-color: rgb(228, 195, 112);
+    height: 200px;
+    grid-area: f;
+}
+#menu {
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: right;
+}
+#menu a {
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid black;
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+}
+#menu a:hover {
+    background-color: #e7e7e7f1;
+}

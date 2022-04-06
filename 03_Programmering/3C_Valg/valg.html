@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Valg</title>
+    </head>
+    <body>
+        <script>
+            let riktigTall = 42;
+            let gjettet;
+            gjettet = 17;
+            console.log(gjettet == riktigTall);
+
+            console.log(5 == "5"); // skriver ut true
+            console.log(5 === "5"); // skriver ut false
+
+            console.log(5 != 4); // true
+            console.log(5 != 5); // false
+            console.log(5 != "5"); // false
+            console.log(5 !== 4); // true
+            console.log(5 !== "5"); // true
+            // viser true om de IKKE er like.
+
+            console.log(gjettet > riktigTall);
+            console.log(gjettet < riktigTall);
+            //for å sjekke om gjettet tall er mindre eller større.
+
+            if (gjettet === riktigTall) {
+                console.log("Riktig!");
+            } else {
+                console.log("Feil!");
+            }
+            //if setninger
+            if (gjettet === riktigTall) {
+                console.log("Riktig!");
+            } else if (gjettet < riktigTall) {
+                console.log("For lavt");
+            } else {
+                console.log("For høyt");
+            }
+
+            //Eksempel nedenfor
+            //Oppgave 3
+            let riktigHøyde = 100;
+            let høyde = prompt("Skriv inn høyden din:");
+            if (høyde === riktigHøyde) {
+                console.log("godkjent!");
+            } else if (høyde < riktigHøyde) {
+                console.log("For lavt");
+            } else {
+                console.log("godkjent!");
+            }
+
+            //Oppgave 4
+            let hight = prompt("Skriv inn highten din:");
+            /*             if ((hight > 100) & (hight < 180)) {
+                console.log("Du kan ta berg og dal banen");
+            } else {
+                console.log("Du kan ikke ta berg og dal banen");
+            }  */
+
+            if (hight < 100) {
+                console.log("For lav");
+            } else if (hight > 180) {
+                console.log("For høy");
+            } else {
+                console.log("Du kan ta berg og dal banen");
+            }
+        </script>
+    </body>
+</html>

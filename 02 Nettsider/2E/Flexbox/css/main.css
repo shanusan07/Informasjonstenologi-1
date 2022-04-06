@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(201, 189, 164);
+    margin: 0;
+}
+#main-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background-color: snow;
+    height: 100vh;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#menu a {
+    background-color: thistle;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}

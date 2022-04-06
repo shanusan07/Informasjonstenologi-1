@@ -1,0 +1,97 @@
+body {
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    max-width: 900px;
+    min-height: 100vh;
+    margin: auto;
+    padding-bottom: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 6, 1fr;
+    grid-template-areas:
+        "h h h h h h"
+        "f f f f f f"
+        "n n n n n n";
+}
+
+#header {
+    grid-area: h;
+}
+
+#tittel {
+    display: flex;
+    padding: 10px 5px 10px 5px;
+}
+
+#tittel img {
+    width: 150px;
+    padding-right: 10px;
+    display: flex;
+}
+
+#tittel h1 {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}
+
+#menu {
+    background-color: rgba(143, 136, 116, 0.425);
+    display: flex;
+    justify-content: left;
+    border: 3px solid black;
+    height: 27px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    border-right: 3px solid black;
+    padding: 5px 10px;
+}
+
+#menu a:hover {
+    background-color: rgba(75, 65, 65, 0.651);
+}
+
+#Fakta {
+    grid-area: f;
+    background-color: white;
+    height: 400px;
+    background-image: url(../img/Turn_farger.jpg);
+    background-size: cover;
+    border: 2px solid black;
+    position: relative;
+}
+
+#info {
+    position: absolute;
+    bottom: 0;
+    height: 110px;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+}
+
+#Nyhet {
+    grid-area: n;
+    background-color: white;
+    height: 400px;
+    background-image: url(../img/OL\ 2020.jpeg);
+    background-size: cover;
+    border: 2px solid black;
+    position: relative;
+}
+
+#info-2 {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+}

@@ -1,0 +1,16 @@
+<script>
+    let tall = [1, 4, 18, 4, 7, 12, 9, 22, 3];
+
+    console.log(beregnSnitt(tall));
+    function beregnSnitt(a) {
+        let sum = 0;
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i];
+            console.log(sum);
+        }
+
+        let gjennomsnitt = sum / a.length;
+
+        return gjennomsnitt;
+    }
+</script>

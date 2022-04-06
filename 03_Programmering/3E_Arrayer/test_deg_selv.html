@@ -1,0 +1,43 @@
+<script>
+    // a. Lag en funksjon som returnerer et tilfeldig tall fra og med 1 til og med 10, altså et av tallene 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+    // b. Lag en annen funksjon som fyller en array med n slike tilfeldige tall. Bruk funksjonen for å lage en array med 1000 tilfeldige tall.
+
+    // c. Lag en annen funksjon som går gjennom en array og fjerner alle forekomster av tallet 7. Funksjonen skal telle antall syvere den fjerner og skrive ut en passende tekst i konsollen. Bruk funksjonen på din array.
+
+    // d. Lag en ny funksjon som går gjennom en array og skriver ut alle verdiene til konsollen på formen: «Verdi med indeks x: y». Bruk funksjonen for å skrive ut din array.
+    // a)
+    function tilfeldig() {
+        return Math.floor(Math.random() * 10 + 1);
+    }
+    // b)
+    function fyllArray() {
+        a = [];
+        for (let i = 0; i < 1000; i++) {
+            a.push(tilfeldig());
+        }
+        return a;
+    }
+    let arrayMedTilfeldigeTall = fyllArray();
+    console.log(arrayMedTilfeldigeTall);
+    // c)
+    function fjern7(a) {
+        let fjernet = 0;
+        for (let i = a.length; i >= 0; i--) {
+            if (a[i] == 7) {
+                a.splice(i, 1);
+                fjernet++;
+            }
+        }
+        console.log(`Det ble fjernet ${fjernet} 7-ere`);
+        return a;
+    }
+    let arrayUtenSyvere = fjern7(arrayMedTilfeldigeTall);
+    // d)
+    function skrivUt(a) {
+        for (let i = 0; i < a.length; i++) {
+            console.log(`${i}: ${a[i]}`);
+        }
+    }
+    skrivUt(arrayUtenSyvere);
+</script>

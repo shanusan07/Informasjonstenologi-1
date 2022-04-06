@@ -1,0 +1,48 @@
+body {
+    font-family: "Gemunu Libre", sans-serif;
+}
+#DNS {
+    margin: 100px auto;
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/DNS.png);
+    background-size: cover;
+    position: relative;
+}
+#Tjener {
+    margin: 100px auto;
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/Tjener.jpg);
+    background-size: cover;
+    position: relative;
+}
+#Klient {
+    margin: 100px auto;
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/Klient.jpg);
+    background-size: cover;
+    position: relative;
+}
+#info {
+    position: absolute;
+    bottom: 0px;
+    height: 150px;
+    width: 97, 5%;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+}
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+#info h3 {
+    margin: 15px 0px 5px 10px;
+}

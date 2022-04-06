@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    max-width: 900px;
+    min-height: 100vh;
+    margin: auto;
+    padding-bottom: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "h h h h h h"
+        "s s s s k k"
+        "i i i i k k";
+}
+#header {
+    grid-area: h;
+}
+
+#tittel {
+    display: flex;
+    padding: 10px 5px 10px 5px;
+}
+
+#tittel img {
+    width: 150px;
+    padding-right: 10px;
+    display: flex;
+}
+
+#tittel h1 {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}
+
+#menu {
+    background-color: rgba(143, 136, 116, 0.425);
+    display: flex;
+    justify-content: left;
+    border: 3px solid black;
+    height: 27px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    border-right: 3px solid black;
+    padding: 5px 10px;
+}
+
+#menu a:hover {
+    background-color: rgba(75, 65, 65, 0.651);
+}
+#sted {
+    grid-area: s;
+    background-color: rgba(72, 141, 141, 0.158);
+    height: 200px;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid black;
+}
+
+#sted img {
+    width: 220px;
+    height: 120px;
+    padding-top: 10px;
+}
+
+#kontakt {
+    grid-area: k;
+    background-color: rgba(72, 141, 141, 0.158);
+    height: auto;
+    padding: 5px 10px 5px 25px;
+    border: 3px solid black;
+}
+
+#kontakt img {
+    height: auto;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#kontakt h2 {
+    padding: 10px 0px 5px 0px;
+}
+
+#Historie {
+    grid-area: i;
+    background-color: rgba(72, 141, 141, 0.158);
+    height: 200px;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid black;
+}
+
+#Historie img {
+    width: 230px;
+    height: 100px;
+    padding-top: 10px;
+}

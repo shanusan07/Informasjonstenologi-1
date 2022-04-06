@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //Del 1
+            //Lage et spill der du må gjette på tallet.
+            //Datamaskinen har trukket tilfeldig tall fra 1 -10.
+            //Du må gjette på nytt hvis det er feil.
+            //Hvis du gjetter riktig skal programet avsluttes med en gratulasjon.
+            //Og antall forsøk.
+
+            let riktigTall = Math.floor(Math.random() * 100 + 1);
+            let gjettet = Number(prompt(`Skriv inn tall fra (1-100): `));
+            let ant = 1;
+
+            while (gjettet != riktigTall) {
+                if (gjettet > riktigTall) {
+                    gjettet = Number(prompt(`Det er for høyt. Prøv igjen: `));
+                } else {
+                    gjettet = Number(prompt(`Det er for lavt. Prøv igjen: `));
+                }
+
+                ant++;
+            }
+            alert(`Gratulerer, ${gjettet} er riktig. Du brukte ${ant} forsøk`);
+
+            //Del 2
+            //Du får tips om tallet du gjettet er for høyt eller lavt
+            //Øk også antall tall fra 10 til 100
+        </script>
+    </body>
+</html>

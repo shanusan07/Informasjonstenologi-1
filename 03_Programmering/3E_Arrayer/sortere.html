@@ -1,0 +1,13 @@
+<script>
+    let navn = ["Martin", "Jesper", "Ola", "Iben", "Alexander"];
+    let tall = [3, 19, 7, 142, 35, 92, 910];
+
+    navn.sort();
+    console.log(navn);
+
+    function sammenlignTall(a, b) {
+        return a - b;
+    }
+    tall.sort(sammenlignTall);
+    console.log(tall);
+</script>

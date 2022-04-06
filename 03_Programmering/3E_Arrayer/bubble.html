@@ -1,0 +1,25 @@
+<script>
+    let tall = [];
+    function randomArray(a, b) {
+        for (let i = 0; i < a; i++) {
+            let random = Math.floor(Math.random() * 10000 + 1);
+            b.push(random);
+        }
+        console.log(b);
+    }
+    randomArray(100, tall);
+
+    function sorter(array) {
+        for (let i = 0; i < array.length; i++) {
+            for (let a = 0; a < array.length; a++) {
+                if (array[i] < array[a]) {
+                    let mid = array[i];
+                    array[i] = array[a];
+                    array[a] = mid;
+                }
+            }
+        }
+        console.log(array);
+    }
+    sorter(tall);
+</script>
